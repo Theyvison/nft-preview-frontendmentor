@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --blue-100: hsl(215, 51%, 70%);
+  --blue-300: hsl(215, 32%, 27%); /*(line) */
+  --blue-500: hsl(216, 50%, 16%); /*(card BG) */
+  --blue-700: hsl(217, 54%, 11%); /*(main BG) */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--blue-700);
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+body * {
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 450px;
+  background-color: var(--blue-500);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.nft-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: opacity 0.2s;
+  position: relative;
+}
+
+.nft-image:hover {
+  opacity: 0.5;
+}
+
+.texts {
+  margin: 2.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.texts h1 {
+  color: var(--white);
+  font-size: 2.2rem;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.texts h1:hover {
+  color: var(--cyan);
+}
+
+.texts p {
+  color: var(--blue-100);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price {
+  color: var(--cyan);
+}
+
+.time-left {
+  color: var(--blue-100);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--blue-100);
+  margin: 2rem 0;
+}
+
+.author {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author img {
+  width: 3.5rem;
+  border: 1px solid var(--blue-100);
+  border-radius: 9999px;
+}
+
+.author p {
+  color: var(--blue-100);
+  word-spacing: 2px;
+}
+
+.author span {
+  color: var(--white);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.author span:hover {
+  color: var(--cyan);
+}
+
+.attribution {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #008c83;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.attribution a:hover {
+  color: #00fff8;
+}
+
+@media (min-width: 500px) {
+  :root {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 90%;
+  }
+}
